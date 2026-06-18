@@ -49,11 +49,8 @@ GLM Modelling/
 
 ├── sev_model_coefficients.csv
 
-├── combined_relativities.csv
+└── combined_relativities.csv
 
-├── glm_freq.rds
-
-└── glm_sev.rds
 
 ## Data
 
@@ -137,7 +134,7 @@ dplyr, tidyr, readr, ggplot2, gridExtra, scales, statmod, stringr
 3. Run `glm_mtpl.R` in full. The script is self-contained and will install any missing packages automatically.
 4. All outputs are written to the `outputs/` folder, which is created automatically if it does not exist.
 
-To reload the fitted models in a separate session:
+After the initial run rds files 'glm_freq.rds' and 'glm_sev.rds' will be created within the output folder. To reload the fitted models in a separate session without re-running the full pipeline:
 
 ```r
 glm_freq <- readRDS("outputs/glm_freq.rds")
