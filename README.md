@@ -17,6 +17,8 @@ GLM Modelling/
 
 ├── glm_mtpl.R                # Main modelling script
 
+├── Summary document.pdf      # Model summary discussing data, model approch and key outputs
+
 ├── README.md                 # This file
 
 │
