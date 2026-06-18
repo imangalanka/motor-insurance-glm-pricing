@@ -157,13 +157,15 @@ Fitted model objects are saved as `.rds` files for use in downstream scoring or 
 ## Limitations & Next Steps
 
 ### Current Limitations
-- The frequency and severity models are built seperately and then multiplied to get the pure premium. This assumes that how often a policyholder claims and how much they claim are unrelated which might not always be true
+- The frequency and severity models are built separately and then multiplied to get the pure premium. This assumes that how often a policyholder claims and how much they claim are unrelated which might not
+always be true
 - The dispersion checks in section 6 shows an over dispersion which suggests that a Negative binomial model maybe more suitable than the Poisson model.
-- The severity is modelled as an average cost per policy rather than at individual claim level. Eventhough this keeps things simple some details about how claims are distributed within a policy is lost.
-- Variable selection for GLMs are done using backward selection at this initial stage however it does not garuntee the best possible set of variables.
-- No interactions between variables are been tested at this stage. In motor insurance some combinations can be more material for an example a young driver with high power car can be more riskier than the two factors alone
-- The banding boundries were chosen using judgement and a basic credibility check.
-- The large loss cap at the 99th percentile is based mainly on the data. In practice reinsurance structure will be taken into account.
+- The severity is modelled as an average cost per policy rather than at individual claim level. Even though this keeps things simple some details about how claims are distributed within a policy is lost.
+-	Variable selection for GLMs are done using backward selection at this initial stage however it does not guarantee the best possible set of variables.
+-	No interactions between variables are being tested at this stage. In motor insurance some combinations can be more material for an example a young driver with high power car can be riskier than the two factors alone
+-	The banding boundaries were chosen using judgement and a basic credibility check.
+-	The large loss cap at the 99th percentile is based mainly on the data. In practice reinsurance structure will be considered.
+
 
 ### Potential Next Steps
 - Negative Binomial frequency model
