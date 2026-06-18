@@ -11,9 +11,9 @@ GLM Modelling/
 
 │
 
-├── freMTPL2freq.csv          # Frequency data – one row per policy
+├── Datasets/freMTPL2freq.csv  # Frequency data – one row per policy
 
-├── freMTPL2sev.csv           # Severity data – one row per claim
+├── Datasets/freMTPL2sev.csv   # Severity data – one row per claim
 
 ├── glm_mtpl.R                # Main modelling script
 
@@ -132,7 +132,7 @@ dplyr, tidyr, readr, ggplot2, gridExtra, scales, statmod, stringr
 
 ## Usage
 
-1. Clone the repository and place `freMTPL2freq.csv` and `freMTPL2sev.csv` in the working directory.
+1. Clone the repository, unzip the Dataset folder and place `freMTPL2freq.csv` and `freMTPL2sev.csv` in the working directory.
 2. Update the `setwd()` path in section 0.5 to match your local directory.
 3. Run `glm_mtpl.R` in full. The script is self-contained and will install any missing packages automatically.
 4. All outputs are written to the `outputs/` folder, which is created automatically if it does not exist.
