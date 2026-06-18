@@ -11,9 +11,7 @@ GLM Modelling/
 
 │
 
-├── Datasets/freMTPL2freq.csv  # Frequency data – one row per policy
-
-├── Datasets/freMTPL2sev.csv   # Severity data – one row per claim
+├── Datasets.zip    # Contains freMTPL2freq.csv and freMTPL2sev.csv
 
 ├── glm_mtpl.R                # Main modelling script
 
@@ -171,8 +169,8 @@ always be true
 
 ### Potential Next Steps
 - Negative Binomial frequency model
-- Tweediw model instead of two seperate models
-- Test combinations of variable and iclude the interaction terms that would improve model fit
+- Tweedie model instead of two separate models
+- Test combinations of variable and include the interaction terms that would improve model fit
 - Review and improve current bands
 - Include more policy and claim data, also additional variables such as claim history, vehicle characteristics and etc if they become available.
 
